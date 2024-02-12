@@ -1,0 +1,30 @@
+.about-cointainers {
+    width: 65%;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    margin: auto;
+}
+.about-guide-container {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+.about-individual-guide {
+    flex: 1;
+    border: 2px solid #000;
+    border-radius: 10px;
+    text-align: justify;
+    padding: 20px 10px;
+}
+@media (max-width: 1199px) {
+    .about-cointainers {
+        width: 90%;
+        padding: 50px 10px;
+    }
+}
+@media (max-width: 799px) {
+    .about-guide-container {
+        flex-direction: column;
+    }
+}

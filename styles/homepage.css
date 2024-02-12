@@ -1,0 +1,98 @@
+/* start of first section */
+.home-top-outline {
+    background-image: url(/images/hero-bg.jpg);
+    background-size: cover;
+}
+.home-top-container {
+    width: 65%;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    gap: 100px;
+}
+.home-top-first {
+    flex: 1;
+}
+.home-top-img {
+    width: 350px;
+    margin: auto;
+    margin-top: 50px;
+}
+.home-top-second {
+    flex: 1;
+}
+.home-top-second-header {
+    display: flex;
+    flex-direction: row;
+}
+.home-rounded-word-container {
+    width: 140px;
+    height: 140px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    padding: 5px;
+    font-size: 20px;
+}
+.home-top-header-word {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.home-top-explainer {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+/* start of second section */
+.home-second-section-container {
+    width: 100%;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    background-color: #fff;
+}
+.home-second-section {
+    width: 65%;
+    margin: auto;
+}
+.home-second-header {
+    display: flex;
+    flex-direction: row;
+}
+/* start of third section */
+.home-third-section-container {
+    width: 100%;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    background-color: #f0f6fe;
+}
+.home-third-section {
+    width: 65%;
+    margin: auto;
+}
+@media (max-width: 1199px) {
+    .home-top-container {
+        width: 90%;
+    }
+}
+@media (max-width: 799px) {
+    .home-top-container {
+        width: 100%;
+        padding: 50px 10px;
+        flex-direction: column;
+    }
+    .home-top-second {
+        text-align: center;
+    }
+    .home-top-second-header {
+        justify-content: center;
+    }
+    .home-top-explainer-container {
+        width: fit-content;
+        margin: auto;
+    }
+}

@@ -1,0 +1,32 @@
+.contact-section-container {
+    width: 65%;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    text-align: center;
+    margin: auto;
+}
+.contact-faqs {
+    width: 70%;
+    margin: auto;
+}
+.contact-faq {
+    background-color: #fff;
+    padding: 20px 30px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+}
+@media (max-width: 1199px) {
+    .contact-section-container {
+        width: 90%;
+        padding: 50px 10px;
+    }
+}
+@media (max-width: 799px) {
+    .contact-faqs {
+        width: 100%;
+    }
+    .contact-faq {
+        font-size: 15px;
+    }
+}

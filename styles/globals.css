@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --foreground-rgb: 0, 0, 0;
+    --background-start-rgb: 214, 219, 220;
+    --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --foreground-rgb: 255, 255, 255;
+        --background-start-rgb: 0, 0, 0;
+        --background-end-rgb: 0, 0, 0;
+    }
+}
+
+body {
+    color: rgb(var(--foreground-rgb));
+    font-family: Rubik, sans-serif;
+    background: linear-gradient(
+            to bottom,
+            transparent,
+            rgb(var(--background-end-rgb))
+        )
+        rgb(var(--background-start-rgb));
+}
+a {
+    font-size: 13px;
+}
+p {
+    font-size: 18px;
+}
+.text-primary {
+    --tw-text-opacity: 1;
+    color: rgb(56 152 226 / var(--tw-text-opacity));
+}
+
+@layer utilities {
+    .text-balance {
+        text-wrap: balance;
+    }
+}
+.header-content {
+    font-weight: bold;
+    font-size: 45px;
+}
+.container-custom {
+    width: 65%;
+    margin: auto;
+}
+.rounded {
+    border-radius: 50%;
+    border: 2px solid #387ae2;
+}
+.primary-btn {
+    text-decoration: none;
+    border: none;
+    background-color: #387ae2;
+    color: #fff;
+    padding: 12px 35px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.primary-btn:hover {
+    background-color: #000;
+}
+@media (max-width: 799px) {
+    a {
+        font-size: 13px;
+    }
+    p {
+        font-size: 15px;
+    }
+    .header-content {
+        font-weight: bold;
+        font-size: 30px;
+    }
+    .primary-btn {
+        padding: 10px 29px;
+        border-radius: 8px;
+        font-size: 15px;
+    }
+}
